@@ -1,25 +1,22 @@
-#! /bin/sh
+#!/bin/sh
 #
 
 
-echo "enter name : "
-read inputName
-echo "Entered name : $inputName"
+# for bash
+# echo -e "\e[0;35m enter name: \e[m"
+# read  name
+#"\e[0;32m enter password: \e[m"
+# read -p   " enter password: " -s password
+# echo 
 
-echo "enter 3 names : "
-read naam1 naam2 naam3
-echo "teeno naam: $naam1, $naam2, $naam3"
+ # sh shell me -s arg nai chalta
+ echo  "\e[0;35m enter name: \e[m"
+ read  name
+ echo "\e[0;32m enter password: \e[m"
+ stty -echo; read password; stty echo
 
 
-# read with prompt (same line as echo)
-read -p "enter username : " username
-# read password prompt (same line as echo)
-read -sp "enter password : " password
-echo "tumhara username  $username"
-echo  # for going to next line
-echo "tumhara password hai   $password"
 
-# read in same line as echo
-# read -p "enter username : " username
-# echo "tumhara username : $userName"
+echo "naame ki value hai $name"
+echo "password ki value hai $password"
 

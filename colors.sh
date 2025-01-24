@@ -6,6 +6,8 @@ echo "\033[0;32m Success, program \
 	ran successfully"
 echo "\033[0;31m Error, program \
 	ran unsuccessfully"
+echo "\033[0;33m Warning, program \
+	ran, par warnings hain bro"
 
 # for /bin/bash
 : '
